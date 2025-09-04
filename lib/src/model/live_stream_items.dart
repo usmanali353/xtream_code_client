@@ -23,11 +23,34 @@ class XTremeCodeLiveStreamItem {
     required this.categoryIds,
     required this.thumbnail,
   });
-
+  XTremeCodeLiveStreamItem.myoBj({
+     this.num,
+     this.name,
+     this.streamType,
+     this.streamId,
+     this.streamIcon,
+     this.epgChannelId,
+     this.added,
+     this.customSid,
+     this.tvArchive,
+     this.directSource,
+     this.tvArchiveDuration,
+     this.categoryId,
+     this.categoryIds,
+     this.thumbnail,
+     this.currentProgram,
+     this.currentProgramProgress,
+     this.categoryName
+  });
   /// Creates a new instance of [XTremeCodeLiveStreamItem] from a JSON object.
   factory XTremeCodeLiveStreamItem.fromJson(Map<String, dynamic> json) =>
       _$XTremeCodeLiveStreamItemFromJson(json);
-
+   ///Currently Running Program
+   String? currentProgram;
+   ///Currently Running Program Progress
+   int? currentProgramProgress;
+   ///Category Name
+   String? categoryName;
   /// The number of the live stream item.
   @JsonKey(fromJson: dynamicToIntConverter)
   final int? num;
