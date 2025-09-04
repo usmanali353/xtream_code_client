@@ -135,7 +135,7 @@ class XtreamCode {
     String password,
   ) {
     final uri =
-        '$url:$port/player_api.php?username=$username&password=$password';
+        '$url/player_api.php?username=$username&password=$password';
     assert(
       Uri.parse(uri).isAbsolute,
       '''
@@ -152,7 +152,7 @@ class XtreamCode {
     String username,
     String password,
   ) {
-    final uri = '$url:$port/$username/$password';
+    final uri = '$url/$username/$password';
     assert(
       Uri.parse(uri).isAbsolute,
       '''
@@ -169,7 +169,7 @@ class XtreamCode {
     String username,
     String password,
   ) {
-    final uri = '$url:$port/movie/$username/$password';
+    final uri = '$url/movie/$username/$password';
     assert(
       Uri.parse(uri).isAbsolute,
       '''
@@ -186,7 +186,7 @@ class XtreamCode {
     String username,
     String password,
   ) {
-    final uri = '$url:$port/series/$username/$password';
+    final uri = '$url/series/$username/$password';
     assert(
       Uri.parse(uri).isAbsolute,
       '''
