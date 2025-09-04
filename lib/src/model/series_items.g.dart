@@ -1,11 +1,11 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-
+ 
 part of 'series_items.dart';
-
+ 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
-
+ 
 XTremeCodeSeriesItem _$XTremeCodeSeriesItemFromJson(
         Map<String, dynamic> json) =>
     XTremeCodeSeriesItem(
@@ -29,8 +29,9 @@ XTremeCodeSeriesItem _$XTremeCodeSeriesItemFromJson(
       episodeRunTime: dynamicToIntConverter(json['episode_run_time']),
       categoryId: dynamicToIntConverter(json['category_id']),
       categoryIds: intListFromJson(json['category_ids']),
+      tmdbId: dynamicToIntConverter(json['tmdb']),
     );
-
+ 
 Map<String, dynamic> _$XTremeCodeSeriesItemToJson(
         XTremeCodeSeriesItem instance) =>
     <String, dynamic>{
@@ -54,4 +55,7 @@ Map<String, dynamic> _$XTremeCodeSeriesItemToJson(
       'episode_run_time': instance.episodeRunTime,
       'category_id': instance.categoryId,
       'category_ids': instance.categoryIds,
+      'tmdb': instance.tmdbId,
     };
+ 
+ 
