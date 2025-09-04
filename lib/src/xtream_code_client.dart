@@ -152,7 +152,7 @@ class XtreamCode {
     String username,
     String password,
   ) {
-    final uri = '$url/$username/$password';
+    final uri = '$url/live/$username/$password';
     assert(
       Uri.parse(uri).isAbsolute,
       '''
