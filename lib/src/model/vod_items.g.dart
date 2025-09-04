@@ -6,6 +6,14 @@ part of 'vod_items.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
+ 
+part of 'vod_items.dart';
+ 
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+ 
 XTremeCodeVodItem _$XTremeCodeVodItemFromJson(Map<String, dynamic> json) =>
     XTremeCodeVodItem(
       streamId: dynamicToIntConverter(json['stream_id']),
@@ -23,8 +31,9 @@ XTremeCodeVodItem _$XTremeCodeVodItemFromJson(Map<String, dynamic> json) =>
       containerExtension: json['container_extension'] as String?,
       customSid: json['custom_sid'] as String?,
       directSource: json['direct_source'] as String?,
+      tmdbId: dynamicToIntConverter(json['tmdb']),
     );
-
+ 
 Map<String, dynamic> _$XTremeCodeVodItemToJson(XTremeCodeVodItem instance) =>
     <String, dynamic>{
       'stream_id': instance.streamId,
@@ -42,4 +51,7 @@ Map<String, dynamic> _$XTremeCodeVodItemToJson(XTremeCodeVodItem instance) =>
       'container_extension': instance.containerExtension,
       'custom_sid': instance.customSid,
       'direct_source': instance.directSource,
+      'tmdb': instance.tmdbId,
     };
+ 
+ 
