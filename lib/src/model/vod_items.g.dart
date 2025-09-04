@@ -5,14 +5,6 @@ part of 'vod_items.dart';
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
-
-// GENERATED CODE - DO NOT MODIFY BY HAND
- 
-part of 'vod_items.dart';
- 
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
  
 XTremeCodeVodItem _$XTremeCodeVodItemFromJson(Map<String, dynamic> json) =>
     XTremeCodeVodItem(
