@@ -39,6 +39,7 @@ class XTremeCodeSeriesItem {
     required this.categoryId,
     required this.categoryIds,
     required this.tmdbId,
+    this.category
   });
  
   /// Creates a [XTremeCodeSeriesItem] instance from a JSON map.
@@ -121,4 +122,7 @@ class XTremeCodeSeriesItem {
  
   /// Converts this [XTremeCodeSeriesItem] instance to a JSON map.
   Map<String, dynamic> toJson() => _$XTremeCodeSeriesItemToJson(this);
+
+ ///category of series item
+  String? category = "";
 }
