@@ -23,6 +23,7 @@ class XTremeCodeVodItem {
     required this.containerExtension,
     required this.customSid,
     required this.directSource,
+    this.category
   });
 
   /// Creates a new instance of [XTremeCodeVodItem] from a JSON object.
@@ -88,4 +89,7 @@ class XTremeCodeVodItem {
 
   /// Converts this instance into a JSON object.
   Map<String, dynamic> toJson() => _$XTremeCodeVodItemToJson(this);
+
+  ///category of VodItem
+  String? category = "";
 }
